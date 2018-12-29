@@ -1,3 +1,3 @@
 #--- Browsers ---
-choco install -y googlechrome
-choco install -y firefox
+cinst -y googlechrome
+cinst -y firefox

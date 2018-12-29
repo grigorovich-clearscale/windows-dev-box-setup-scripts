@@ -36,12 +36,12 @@ executeScript "WSL.ps1";
 RefreshEnv
 executeScript "Docker.ps1";
 
-choco install -y powershell-core
-choco install -y azure-cli
+cinst -y powershell-core
+cinst -y azure-cli
 Install-Module -Force Az
 Install-Module -Force posh-git
-choco install -y microsoftazurestorageexplorer
-choco install -y terraform
+cinst -y microsoftazurestorageexplorer
+cinst -y terraform
 
 # Install tools in WSL instance
 write-host "Installing tools inside the WSL distro..."
@@ -49,8 +49,8 @@ Ubuntu1804 run apt install ansible -y
 Ubuntu1804 run apt install nodejs -y
 
 # personalize
-choco install -y microsoft-teams
-choco install -y office365business
+cinst -y microsoft-teams
+cinst -y office365business
 
 # checkout recent projects
 mkdir C:\github

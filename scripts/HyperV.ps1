@@ -1,1 +1,1 @@
-choco install -y Microsoft-Hyper-V-All --source="'windowsFeatures'"
+cinst -y Microsoft-Hyper-V-All --source="'windowsFeatures'"

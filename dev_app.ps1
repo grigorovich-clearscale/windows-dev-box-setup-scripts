@@ -36,14 +36,14 @@ executeScript "CommonDevTools.ps1";
 # visualstudio2017professional
 # visualstudio2017enterprise
 
-choco install -y visualstudio2017community --package-parameters="'--add Microsoft.VisualStudio.Component.Git'"
+cinst -y visualstudio2017community --package-parameters="'--add Microsoft.VisualStudio.Component.Git'"
 Update-SessionEnvironment #refreshing env due to Git install
 
 #--- UWP Workload and installing Windows Template Studio ---
-choco install -y visualstudio2017-workload-azure
-choco install -y visualstudio2017-workload-universal
-choco install -y visualstudio2017-workload-manageddesktop
-choco install -y visualstudio2017-workload-nativedesktop
+cinst -y visualstudio2017-workload-azure
+cinst -y visualstudio2017-workload-universal
+cinst -y visualstudio2017-workload-manageddesktop
+cinst -y visualstudio2017-workload-nativedesktop
 
 executeScript "WindowsTemplateStudio.ps1";
 executeScript "GetUwpSamplesOffGithub.ps1";

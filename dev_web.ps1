@@ -36,7 +36,7 @@ code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension msjsdiag.debugger-for-edge
 
 #--- Microsoft WebDriver ---
-choco install -y microsoftwebdriver
+cinst -y microsoftwebdriver
 
 Enable-UAC
 Enable-MicrosoftUpdate
