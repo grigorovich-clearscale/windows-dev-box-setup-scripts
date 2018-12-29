@@ -26,6 +26,8 @@ executeScript "SystemConfiguration.ps1";
 executeScript "FileExplorerSettings.ps1";
 executeScript "RemoveDefaultApps.ps1";
 executeScript "CommonDevTools.ps1";
+executeScript "HyperV.ps1";
+executeScript "Docker.ps1";
 executeScript "WSL.ps1";
 executeScript "Browsers.ps1";
 
@@ -44,8 +46,10 @@ cinst -y jdk11
 cinst -y maven
 cinst -y gradle
 
+# IntelliJ IDEA Ultimate
 cinst -y intellijidea-ultimate
 
+# nodejs + build tools
 cinst -y nodejs-lts # Node.js LTS, Recommended for most users
 # cinst -y nodejs # Node.js Current, Latest features
 cinst -y visualstudio2017buildtools
