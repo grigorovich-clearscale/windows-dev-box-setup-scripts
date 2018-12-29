@@ -1,4 +1,4 @@
-cinst -y Microsoft-Windows-Subsystem-Linux --source="'windowsfeatures'"
+cinst -y Microsoft-Windows-Subsystem-Linux -source "'windowsfeatures'"
 
 #--- Ubuntu ---
 # TODO: Move this to choco install once --root is included in that package
