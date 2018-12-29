@@ -30,6 +30,7 @@ executeScript "HyperV.ps1";
 executeScript "Docker.ps1";
 executeScript "WSL.ps1";
 executeScript "Browsers.ps1";
+executeScript "ColorschemeSolarized.ps1";
 
 # Browser extensions
 ## Bitwarden
