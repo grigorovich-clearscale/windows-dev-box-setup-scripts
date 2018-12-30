@@ -43,7 +43,7 @@ IF(!(Test-Path $searchEnginePath)) {
 }
 
 cinst -y slack
-cinst -y microsoft-office-deployment
+cinst -y microsoft-office-deployment -params "'/Product=WordRetail,ExcelRetail,OutlookRetail,OneNoteRetail'"
 
 Enable-UAC
 Enable-MicrosoftUpdate
